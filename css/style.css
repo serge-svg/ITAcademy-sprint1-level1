@@ -93,3 +93,19 @@ footer article {
     width: calc(100% - 20px);
 }
 
+/* Phone size */
+/* @media (min-width:480px)  {} */
+
+/* Tablet size */
+@media screen and (max-width: 600px) {
+    main {
+        background-color:  #FEFF03;
+        flex-direction: column;
+    }
+
+    main section,
+    main aside {   
+        width: calc(100% - 20px);
+    }
+}
+
