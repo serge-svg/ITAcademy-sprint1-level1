@@ -7,20 +7,18 @@
 
 header {
     background-color:  black;
-    margin: 5px;
 }
 
 header .high {
     background-color: #2D4059;
+    display: flex;
+    justify-content: space-between;
 }
 
-header aside article {
-    background-color: #eab654;    
-}
-
-header article {
+header .high article {
     width: 70%;
     background-color: #EA5455;
+    margin: 0 10px 0 10px;
 }
 
 header aside {
@@ -34,7 +32,7 @@ header .low {
 
 header .low article {
     background-color: #FED460;
-    margin: 5px;
+    width: calc(100% - 20px);
 }
 
 /*
