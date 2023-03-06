@@ -1,0 +1,53 @@
+* {
+    background-color: whitesmoke;
+    max-width: 1200px;
+    padding: 10px;
+    border: 0px;
+}
+
+header {
+    background-color:  black;
+    margin: 5px;
+}
+
+header .high {
+    background-color: #2D4059;
+}
+
+header aside article {
+    background-color: #eab654;    
+}
+
+header article {
+    width: 70%;
+    background-color: #EA5455;
+}
+
+header aside {
+    width: 15%;
+    background-color: #EA5455;
+}
+
+header .low {
+    background-color: #F07B3F;
+}
+
+header .low article {
+    background-color: #FED460;
+    margin: 5px;
+}
+
+/*
+body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "header"
+        "content"
+        "footer";
+}
+
+header section.high{
+    background-color: #2D4059;
+}
+*/
