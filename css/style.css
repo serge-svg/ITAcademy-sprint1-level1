@@ -3,6 +3,9 @@
     max-width: 1200px;
     padding: 10px;
     border: 0px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header {
@@ -13,15 +16,15 @@ header .high {
     background-color: #2D4059;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 header .high article {
     width: 70%;
     background-color: #EA5455;
-    margin: 0 10px 0 10px;
 }
 
-header aside {
+header .high aside {
     width: 15%;
     background-color: #EA5455;
 }
@@ -32,7 +35,7 @@ header .low {
 
 header .low article {
     background-color: #FED460;
-    width: calc(100% - 20px);
+    width: 100%;
 }
 
 footer {
@@ -45,6 +48,34 @@ main {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+}
+
+main section {
+    background-color: #4E4E6A;
+    width: 70%;
+}
+
+main section article {
+    background-color: #1F6BAE;
+    width: 100%;
+}
+
+.footer-article{
+    background-color: #70A3C4;
+    width: 100%;
+}
+
+main aside {
+    background-color: #F73F52;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;    
+}
+
+main aside article {
+    background-color: #FEEA85;
+    margin: 2%;
 }
 
 .article1 { grid-area: article-top-left; }
@@ -62,39 +93,10 @@ main {
     gap: 10px;
 }
 
-main section {
-    background-color: #4E4E6A;
-    width: 70%;
-}
-
-main section article {
-    background-color: #1F6BAE;
-}
-
-main section footer {
-    background-color: #70A3C4;
-}
-
-main aside {
-    background-color: #F73F52;
-    width: 30%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;    
-}
-
-main aside article {
-    background-color: #FEEA85;
-    margin: 2%;
-}
-
 footer article {
     background-color: #E6AF2E;    
-    width: calc(100% - 20px);
+    width: 100%;
 }
-
-/* Phone size */
-/* @media (min-width:480px)  {} */
 
 /* Tablet size */
 @media screen and (max-width: 600px) {
@@ -105,7 +107,38 @@ footer article {
 
     main section,
     main aside {   
-        width: calc(100% - 20px);
+        width: 100%;
     }
 }
 
+/* Phone size */
+@media screen and (max-width: 480px) {
+    header .high {
+        flex-direction: column;
+    }
+
+    header .high article,
+    header .high aside {
+        width: 100%;
+    }
+
+    .main-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-grid-container article{
+        background-color: #62969c;
+    }
+    .main-grid-container .footer-article {
+        background-color: #A3DDCB;
+    }
+
+    main aside {
+        background-color: #fd7b54;
+    }
+
+    main aside article {
+        background-color: #fdb36b;
+    }
+}
